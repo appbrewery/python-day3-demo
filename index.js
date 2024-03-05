@@ -153,6 +153,8 @@ function NewLine(text, isPrompt) {
   } else {
     $("#Content").append('<div id="' + CurrentId + '">' + text + "</div>");
   }
+    document.getElementById(CurrentId).scrollIntoView();
+
 }
 
 function GenerateId() {
